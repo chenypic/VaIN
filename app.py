@@ -21,19 +21,19 @@ st.title("VaIN Prediction System")
 # age: numerical input
 #age = st.number_input("Age:", min_value=1, max_value=120, value=50)
 
-age = st.selectbox("Age (0=<48, 1=>48):", options=[0, 1], format_func=lambda x: '<48 (0)' if x == 0 else '>48 (1)')
+age = st.selectbox("Age (0 =< 48, 1 => 48):", options=[0, 1], format_func=lambda x: '<48 (0)' if x == 0 else '>48 (1)')
 
 
-HPV = st.selectbox("Follow-up HPV (0=Negative, 1=Positive):", options=[0, 1], format_func=lambda x: '<48 (0)' if x == 0 else '>48 (1)')
+HPV = st.selectbox("Follow-up HPV (0 = Negative, 1 = Positive):", options=[0, 1], format_func=lambda x: '<48 (0)' if x == 0 else '>48 (1)')
 
 # sex: categorical selection
-TCT = st.selectbox("Follow-up Cytology (0=Negative, 1=Positive):", options=[0, 1], format_func=lambda x: 'Negative (0)' if x == 0 else 'Positive (1)')
+TCT = st.selectbox("Follow-up Cytology (0 = Negative, 1 = Positive):", options=[0, 1], format_func=lambda x: 'Negative (0)' if x == 0 else 'Positive (1)')
 
 # cp: categorical selection
 VaIN = st.selectbox("Co-VaIN:", options=[0, 1], format_func=lambda x: 'Negative (0)' if x == 0 else 'Positive (1)')
 
 # fbs: categorical selection
-TZ = st.selectbox("Transformation Zone Type(0= I and II, 1= III):", options=[0, 1], format_func=lambda x: 'Negative (0)' if x == 0 else 'Positive (1)')
+TZ = st.selectbox("Transformation Zone Type(0= Type I and II, 1 = Type III):", options=[0, 1], format_func=lambda x: 'Type I and II (0)' if x == 0 else 'Type III')
 
 
 
