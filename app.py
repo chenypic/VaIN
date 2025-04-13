@@ -33,7 +33,7 @@ TCT = st.selectbox("Follow-up Cytology (0 = Negative, 1 = Positive):", options=[
 VaIN = st.selectbox("Co-VaIN:", options=[0, 1], format_func=lambda x: 'Negative (0)' if x == 0 else 'Positive (1)')
 
 # fbs: categorical selection
-TZ = st.selectbox("Transformation Zone Type(0= Type I and II, 1 = Type III):", options=[0, 1], format_func=lambda x: 'Type I and II (0)' if x == 0 else 'Type III')
+TZ = st.selectbox("Transformation Zone Type(0= Type I and II, 1 = Type III):", options=[0, 1], format_func=lambda x: 'Type I and II (0)' if x == 0 else 'Type III (1)')
 
 
 
